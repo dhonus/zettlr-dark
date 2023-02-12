@@ -1,0 +1,203 @@
+/* scrollbar */
+::-webkit-scrollbar-button {
+  display: none!important;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #363636!important;
+  border-radius: 7px;
+}
+
+body.dark div.split-view{
+  background-color: #262626;
+}
+body.dark horizontal-resizer{
+  
+}
+body.dark div.view {
+  background-color: #212121;
+}
+body.dark div#toolbar, body.dark div#menubar{
+  background-color:#212121!important;
+}
+
+body.dark #editor{
+  background-color: #262626;
+  border-top: 1px solid #363636;
+}
+
+body.dark #file-tree {
+  background-color: #212121!important;
+}
+
+body.dark .tree-item .display-text {
+  font-size: 13px;
+  line-height: 13px;
+}
+body.dark .tree-item .toggle-icon {
+  height: 13px;
+  width: inherit;
+}
+body.dark .tree-item {
+  margin: 0 .3rem;
+  padding: .3rem 0;
+  border-radius: 7px;
+}
+
+body.dark .tree-item:hover {
+  background-color: #2e2e2e;
+}
+
+/* Selected element */
+body div.tree-item-container .tree-item.selected .display-text {
+  background-color: inherit;
+}
+body div.tree-item-container .tree-item.selected {
+  background-color: #2e2e2e;
+}
+
+/* right sidebar */
+body.dark .system-tablist{
+  display: flex;
+  flex-direction: row;
+  gap: .1rem;
+  padding: .2rem;
+  margin: 0;
+  border-bottom: 1px solid #363636;
+  background-color: #212121;
+}
+body.dark .system-tablist button.system-tab{
+  background-color: transparent;
+  border: none;
+}
+body.dark .system-tablist button.system-tab clr-icon {
+  fill:lightgray;
+}
+body.dark .system-tablist button.system-tab:hover {
+  background-color: #2e2e2e;
+}
+body.dark .system-tablist button.system-tab.active {
+  background-color: #2e2e2e;
+}
+body.dark .system-tablist button.system-tab.active clr-icon{
+  fill: white;
+}
+body.dark div#sidebar{
+  color: rgb(198, 195, 198)!important;
+}
+/* tabs */
+
+div.scroller {
+  display: none;
+}
+body.dark div#tab-container{
+  background-color: #212121!important;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  overflow: visible;
+  margin-top: 1px;
+}
+body.linux.dark div#tab-container div[role="tab"] {
+  background-color: inherit;
+  border: none;
+  border-radius: 7px 7px 0 0;
+  width: auto;
+  min-width: none;
+  max-width: 200px;
+}
+body.linux.dark div#tab-container div[role="tab"]:hover {
+  border-radius: 7px;
+  background-color: #2f2f2f;
+}
+body.linux.dark div#tab-container div[role="tab"].active {
+  background-color: #262626;
+  border-left: 1px solid #363636;
+  border-right: 1px solid #363636;
+  border-top: 1px solid #363636;  
+  height: 31px;
+}
+body.linux.dark div#tab-container div[role="tab"].active:hover {
+  border-radius: 7px 7px 0 0;
+}
+body.dark div.split-view div.view.view-border{
+  border-color: rgb(54, 54, 54);
+}
+
+/* toolbar */
+body.dark div#toolbar {
+  padding: 0 .3rem;
+}
+body.dark div#toolbar button {
+  border: none;
+  border-radius: 7px;
+}
+body.dark div#toolbar button clr-icon{
+  fill: #c6c3c6!important;
+}
+body.linux.dark div#toolbar div.three-way-toggle button {
+  border-radius: 7px;
+}
+
+/* left sidebar */
+body #file-manager .file-manager-filter{
+  padding: 0 .3rem;
+}
+body.linux div#toolbar div.three-way-toggle {
+  margin: 0;
+  border: 1px solid #363636;
+  border-radius: 7px;
+}
+body.dark #file-manager .file-manager-filter .file-manager-filter-input, body.dark .form-control input, body.dark div.form-control select {
+  background-color: #262626;
+  border: 1px solid rgb(54, 54, 54);
+  transition: all .3s ease;
+}
+body.dark #file-manager .file-manager-filter .file-manager-filter-input:hover ,
+body.dark .form-control input:hover
+{
+  background-color: #262626;
+  border: 1px solid rgb(80, 80, 80);
+}
+
+body.dark #file-tree #directories-dirs-header, body.dark #file-tree #directories-files-header {
+  border-bottom: 1px solid rgb(54, 54, 54);
+  color: #c6c3c6;
+}
+body div.tree-item-container .display-text {
+  color: #c6c3c6!important;
+}
+
+body.dark .form-control button{
+  background-color: #262626;
+  border: 1px solid rgb(54, 54, 54);
+  transition: all .3s ease;
+}
+body.dark .form-control button:hover {
+  background-color: #363636;
+  border: 1px solid rgb(54, 54, 54);
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+/* OTHERS */
+body.dark div.application-menu{
+  border: 1px solid rgb(54, 54, 54);
+  border-radius: 7px;
+  background: #212121;
+}
+body.dark div.application-menu div.menu-item:hover {
+  background-color: #2e2e2e!important;
+  border-radius: 7px;
+}
+body.dark div.application-menu div.menu-item.separator{
+  background-color: #363636!important;
+  border: none;
+}
